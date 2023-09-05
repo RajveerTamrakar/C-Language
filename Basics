@@ -2,6 +2,8 @@
 
 int main() 
 {
-    printf("myself RAJVEER");
+    printf("myself RAJVEER /n");
+printf("my first program\n");
+
     return 0;
 }
