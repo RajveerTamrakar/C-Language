@@ -1,0 +1,11 @@
+#include<stdio.h>
+int main()
+{ 
+    int minutes,seconds;
+    printf("enter time in seconds:");
+    scanf("%d", &seconds);
+    minutes=seconds/60;
+    seconds=seconds%60;
+    printf("time is %d minutes and %d seconds", minutes,seconds);
+    return 0;
+    }
