@@ -1,0 +1,13 @@
+#include<stdio.h>
+int main()
+{
+    int num,value=0;
+   printf("enter any number:");
+   scanf("%d", &num);
+   do {
+    value=value+1;
+    printf("%d \n", value);
+   } while(value<num);
+return 0;
+   
+}
