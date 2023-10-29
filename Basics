@@ -1,9 +1,0 @@
-# include<stdio.h>
-
-int main() 
-{
-    printf("myself RAJVEER /n");
-printf("my first program\n");
-
-    return 0;
-}
