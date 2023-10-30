@@ -1,0 +1,49 @@
+#include <stdio.h>
+int main()
+{
+    float unit, kms, miles, inches, cms, foot, metres, pound, kgs;
+    printf("coversion are to be done: \n");
+    printf("enter 1 for kms to miles: \n enter 2 for inches to foot: \n enter 3 for cms to inches: \n enter 4 for pound to kgs: \n  enter 5 for inches to metres: \n");
+    scanf("%f", &unit);
+
+    if (unit == 1)
+    {
+        printf("enter distance in kilometres:");
+        scanf("%f", &kms);
+        miles = kms * 1.609;
+        printf("the distance in miles is %0.2f \n", miles);
+    }
+    else if (unit == 2)
+    {
+        printf("enter distance in inches:");
+        scanf("%f", &inches);
+        foot = inches * 12;
+        printf("the length in foot is %0.2f \n", foot);
+    }
+    else if (unit == 3)
+    {
+        printf("enter length in cms");
+        scanf("%f", &cms);
+        inches = 2.54 * cms;
+        printf("the length in inches is %0.2f \n", inches);
+    }
+    else if (unit == 4)
+    {
+        printf("enter weight in pounds:");
+        scanf("%f", &pound);
+        kgs = pound * 0.453;
+        printf("the weight in kgs is %0.2f \n", kgs);
+    }
+    else if (unit == 5)
+    {
+        printf("enter length in inches:");
+        scanf("%d", &inches);
+        metres = inches * 39.78;
+        printf("the distance in metres is %f \n", metres);
+    }
+    else
+    {
+        printf("invalid input: \n");
+    }
+    return 0;
+}
