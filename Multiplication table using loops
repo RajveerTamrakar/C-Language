@@ -1,1 +1,14 @@
+#include<stdio.h>
+int main()
+{
+int num;
+printf("enter number you want multiplication table of: \n");
+scanf("%d", &num);
+printf("the multiplication table of %d is as follows: \n", num);
 
+for (int i=1;i<=10;i++)
+{
+printf("%d*%d=%d", num,i,num*i0;
+}
+return 0;
+}
