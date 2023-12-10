@@ -1,0 +1,30 @@
+// fibb - 0,1,1,2,3,5,8,13,21,34,55,89,144..
+#include <stdio.h>
+
+int fib(int num); //yaha declare kar diya
+
+int main()
+{
+    int n;
+    printf("enter the number you want fibbonaci series of:\n");
+    scanf("%d", &n);
+
+    int fib(int num)
+    {
+        if (num == 0) //base conditions
+        {
+            return 0;
+        }
+        if (num == 1) //2 baar if kyunki else lagayenge toh aakhiri condn ko else if meh krna padega
+            {
+                return 1;
+            }
+
+        int fibnm1 = fib(num - 1); // most important three lines
+        int fibnm2 = fib(num - 2);
+        int fibn = fibnm1 + fibnm2;
+    }
+    int value = fib(n);
+    printf("the fibonnaci of %d is : %d", n, fib(n));
+    return 0;
+}
